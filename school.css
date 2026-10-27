@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Nunito:wght@600;700;800;900&display=swap');
+
+/* 放課後的日系校園：晴空、制服藍、櫻花粉、方格筆記。 */
+:root{--bg:#fffaf2;--panel:#fff;--ink:#2c4b61;--muted:#6f8393;--cyan:#57a8d6;--violet:#8c9ed8;--pink:#ef90a9;--green:#5bab8b;--red:#e97c87}
+html{scroll-padding-top:85px}
+body{color:var(--ink);font-family:'Zen Maru Gothic','Noto Sans TC',sans-serif;background:#fffaf2;line-height:1.75}
+body:before{background-image:radial-gradient(#78b6d2 1.15px,transparent 1.15px);background-size:24px 24px;opacity:.22;mask-image:none;position:absolute}
+body:after{content:"";position:absolute;top:830px;right:0;width:210px;height:360px;background:radial-gradient(circle at 30% 30%,#f8bdd0 0 9px,transparent 10px),radial-gradient(circle at 70% 60%,#f8bdd0 0 7px,transparent 8px);opacity:.4;pointer-events:none}
+.shell{width:min(1160px,calc(100% - 40px))}
+.nav{background:#fffdf9ed;border-bottom:2px solid #c9e3ed;box-shadow:0 3px 0 #cce9f15e;backdrop-filter:blur(12px)}
+.navinner{min-height:75px}
+.brand{font-family:'Nunito','Zen Maru Gothic',sans-serif;font-size:21px;font-weight:900;letter-spacing:-.5px;color:#416d85;display:flex;align-items:center;gap:8px}
+.brand:before{content:"✿";color:#ef94ab;font-size:28px;line-height:1;transform:rotate(-10deg)}
+.brand span{color:#ec8eaa}
+.links{color:#6b8494;font-weight:800;font-size:13px}
+.links a:hover{color:#e8819e}
+.navcta,.btn{font-family:'Zen Maru Gothic',sans-serif;border:2px solid #72afd1;color:#346884;background:#f4fbff;border-radius:15px;box-shadow:4px 4px 0 #c1dfea;transform:none}
+.navcta:hover,.btn:hover{background:#dff3fc;transform:translate(2px,2px);box-shadow:2px 2px 0 #c1dfea}
+.btn.primary{background:#f7a9bb;color:#653b52;border:2px solid #df8fa4;box-shadow:5px 5px 0 #f5d2d7}
+.btn.primary:hover{background:#ffc0cc;box-shadow:2px 2px 0 #f5d2d7}
+.btn.ghost{background:#fffdf9;border-color:#9bc8db;color:#47708b}
+.hero{width:min(100%,100%);max-width:none;padding:112px max(20px,calc((100vw - 1160px)/2)) 108px;background:linear-gradient(180deg,#b9e8f7 0%,#d8eff7 72%,#e4f4f4 100%);overflow:hidden;isolation:isolate;border-bottom:9px solid #fff;border-radius:0 0 48px 48px}
+.hero:before{content:"";position:absolute;z-index:-1;width:380px;height:380px;border-radius:50%;top:25px;right:2%;background:#fff6c7b0;box-shadow:0 0 0 28px #ffffff25,0 0 0 65px #ffffff1a}
+.hero:after{content:"";position:absolute;z-index:-1;bottom:-44px;left:-1%;width:102%;height:160px;background:radial-gradient(ellipse 95px 40px at 7% 55%,#fff 98%,transparent 100%),radial-gradient(ellipse 130px 55px at 25% 70%,#fff 98%,transparent 100%),radial-gradient(ellipse 160px 52px at 50% 60%,#fff 98%,transparent 100%),radial-gradient(ellipse 140px 65px at 78% 75%,#fff 98%,transparent 100%),radial-gradient(ellipse 140px 45px at 97% 55%,#fff 98%,transparent 100%);opacity:.6}
+.eyebrow{background:#fffdf4;border:2px solid #a5d4e5;color:#578baa;border-radius:100px;box-shadow:4px 4px 0 #a9d7e1;font:800 12px 'Nunito','Zen Maru Gothic',sans-serif;letter-spacing:1.7px}
+.eyebrow:before{background:#f6a5b9;box-shadow:none}
+h1{font-family:'Nunito','Zen Maru Gothic','Noto Sans TC',sans-serif;letter-spacing:-3px;font-weight:900;color:#365d76;text-shadow:3px 4px 0 #ffffff9a;margin-top:30px}
+.grad{background:linear-gradient(95deg,#539ac9 2%,#698fc3 45%,#e888a4 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:none}
+.hero p{color:#456d80;font-size:18px;font-weight:700;max-width:760px}
+.hero b{color:#be6787}
+.heroactions{margin:35px 0 45px}
+.path{background:#ffffff9e;border:2px dashed #9bccdf;padding:12px 22px;border-radius:20px;width:max-content;max-width:100%;margin:auto}
+.path span{color:#5e8aa2;font-family:'Nunito',sans-serif;font-weight:900}
+.path i{color:#ed9eb5}
+.section{padding:78px 0;position:relative}
+.sectionhead{margin-bottom:35px}
+.kicker{font:900 12px 'Nunito','Zen Maru Gothic',sans-serif;letter-spacing:2px;color:#5d9fc3}
+.section h2{color:#345b72;font-weight:900;letter-spacing:-1.5px}
+.section h2:after{content:"";display:block;width:76px;height:7px;border-radius:10px;background:linear-gradient(90deg,#ffe088,#f6abc1);margin-top:19px}
+.lead{color:#6f8796;font-weight:600}
+.card{background:#fffefa;border:2px solid #c9dfea;border-radius:24px;box-shadow:7px 8px 0 #d6e7ec,0 17px 40px #7eafc119}
+.stepcard{min-height:300px;padding:31px;transform:rotate(-.5deg)}
+.stepcard:nth-child(2){transform:rotate(.6deg);background:#fdfaff}
+.stepcard:nth-child(3){transform:rotate(-.3deg);background:#fff8fb}
+.stepcard:before{left:0;right:0;top:0;height:9px;box-shadow:none;background:var(--accent)}
+.stepcard .ico{background:#ffffff;border:2px solid var(--accent);border-radius:50%;box-shadow:3px 3px 0 color-mix(in srgb,var(--accent) 30%,white)}
+.stepcard h3{color:var(--accent);font-weight:900}
+.stepcard p{color:#607b8c;font-weight:600}
+.stepcard small{color:#8da5b2}
+.stepcard[style*="--accent:var(--cyan)"],.flowcard[style*="--accent:var(--cyan)"]{--accent:#64b2d3!important}
+.stepcard[style*="--accent:var(--violet)"],.flowcard[style*="--accent:var(--violet)"]{--accent:#9b99d3!important}
+.stepcard[style*="--accent:var(--pink)"],.flowcard[style*="--accent:var(--pink)"]{--accent:#ed9bb1!important}
+.pill{background:#e8f5fa;color:#588ba3;border:1.5px solid #b8dbe9;font-weight:900}
+.split .card:first-child{background:#f3faff}.split .card:nth-child(2){background:#fff6fa}
+.split h3{font-weight:900}
+.split p{color:#607c8f!important;font-weight:700}
+.choose div{background:#fff;border:1.5px solid #cde3ec;border-radius:14px}
+.choose strong{color:#456f89}.choose span{color:#7d98a7}
+.flowcard{background:#fffdf7;min-height:315px;border-top:9px solid var(--accent)}
+.flowcard .smalltop{font-weight:900}
+.flowcard h3{font-weight:900}
+.flowcard ul{color:#5f7b8d;font-weight:700}
+.flowcard li::marker{color:var(--accent)}
+.workspace .card{background:#fffefa}
+.formfield label{color:#456e85;font-weight:900}
+.formfield input,.formfield textarea,.simcontrol input{background:#fff;color:#2f536a;border:2px solid #bed9e4;border-radius:13px}
+.formfield input:focus,.formfield textarea:focus,.simcontrol input:focus{border-color:#77b5d3}
+.hint,.note{color:#879baa}
+.workright{background:#f9fcff!important}
+.filename{color:#417e9e}
+.dot{color:#f1a2ba}
+.preview,.code,.log{background:#334b61;color:#f3f9fb;border:2px solid #6689a0;border-radius:15px}
+.preview{box-shadow:inset 4px 4px 0 #ffffff0e}
+.tinybtn{background:#eff8fc;color:#527991;border:1.5px solid #bddce8;border-radius:12px;font-weight:900}
+.tinybtn:hover{background:#dceff8}
+.simcontrol,.simright{background:#fffefa}
+.tempbig{color:#477e9d}
+.gauge{background:#dcecf1}
+.rangeline{color:#8ba0af}
+.status.normal{background:#dff3e9;color:#3c9675}
+.status.hot{background:#ffe4e9;color:#cc6773}
+.status.offline{background:#e9edf0;color:#788c99}
+.test{background:#fff;border:2px solid #d4e5ec;border-radius:17px;box-shadow:3px 4px 0 #e7edf0}
+.test:nth-child(even){background:#fff9fb}
+.test .mark{background:#e1f4ec;color:#4da07e;border-radius:50%;border:1px solid #a9dec9}
+.test:nth-child(n+4) .mark{background:#ffe9e9;color:#d67b87;border-color:#efbec5}
+.test h4{color:#426d83;font-weight:900}
+.test p{color:#6e8493;font-weight:600}
+#verify .boxpad{background:#f3fbff}
+#verify label{cursor:pointer}
+#verify input[type="checkbox"]{accent-color:#66a9ce;width:17px;height:17px;vertical-align:middle;margin-right:6px}
+.bottom{padding-bottom:85px}
+.bottom .card{background:#faeff4;border:2px dashed #eeb1c2;box-shadow:8px 8px 0 #e8dce1;padding:54px 20px}
+.bottom h2{color:#416c82}
+.bottom p{color:#6b8494}
+.footer{border-top:2px solid #d3e6ed;color:#7796a8;font-weight:800}
+.fade{color:#df92a9}
+@media(max-width:860px){.hero{padding:85px 20px 92px;border-radius:0 0 28px 28px}.hero:before{right:-170px}.stepcard{min-height:auto}.flowcard{min-height:auto}.section{padding:62px 0}}
+@media(max-width:500px){.hero{padding:68px 20px 86px}h1{font-size:clamp(48px,12vw,65px);letter-spacing:-2px}.hero p{font-size:15px}.eyebrow{font-size:10px;letter-spacing:.7px}.path{padding:10px;gap:7px}.path span{font-size:10px}.section h2{font-size:29px}.footer{display:block}}
